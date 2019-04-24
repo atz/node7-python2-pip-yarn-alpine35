@@ -12,4 +12,4 @@ RUN\
  pip install boto3==$BOTO_VERSION &&\
  npm i -g yarn@$YARN_VERSION webpack@$WEBPACK_VERSION typescript@$TYPESCRIPT_VERSION &&\
  rm -rf /tmp/npm*
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-l", "-c"]
